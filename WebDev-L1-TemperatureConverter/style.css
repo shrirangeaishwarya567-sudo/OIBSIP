@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 30px 16px;
+  background: linear-gradient(135deg, #dcece5, #f7f4ed);
+  color: #20302b;
+  font-family: "DM Sans", sans-serif;
+}
+
+.converter {
+  width: min(100%, 560px);
+  padding: 42px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 14px 40px rgba(32, 48, 43, 0.15);
+}
+
+.tag {
+  color: #c4613d;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+h1,
+h2 {
+  font-family: "Playfair Display", serif;
+}
+
+h1 {
+  font-size: 2.6rem;
+  line-height: 1.1;
+}
+
+.subtitle {
+  margin: 14px 0 28px;
+  color: #607069;
+}
+
+label {
+  display: block;
+  margin: 18px 0 8px;
+  font-weight: 700;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  font: inherit;
+}
+
+input,
+select {
+  border: 1px solid #cdd6d1;
+  outline: none;
+}
+
+input:focus,
+select:focus {
+  border-color: #c4613d;
+}
+
+button {
+  margin-top: 24px;
+  border: none;
+  background: #20302b;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #c4613d;
+}
+
+#error {
+  min-height: 24px;
+  margin-top: 12px;
+  color: #c43d3d;
+  font-weight: 700;
+}
+
+.results {
+  margin-top: 25px;
+  padding-top: 25px;
+  border-top: 1px solid #e2e6e4;
+}
+
+.results h2 {
+  margin-bottom: 15px;
+  font-size: 1.7rem;
+}
+
+.result-card {
+  margin-top: 10px;
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #edf4ef;
+  border-radius: 8px;
+}
+
+.result-card strong {
+  color: #c4613d;
+}
+
+@media (max-width: 500px) {
+  .converter {
+    padding: 28px 20px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+}
